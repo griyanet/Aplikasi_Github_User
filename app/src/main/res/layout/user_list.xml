@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        tools:srcCompat="@drawable/user1"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF909090"/>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/img_avatar"
+        android:textStyle="bold"
+        tools:text="User" />
+
+    <TextView
+        android:id="@+id/lbl_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fullname"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/img_avatar"
+        android:text="@string/lblfollower"
+        android:textColor="#4E4D4D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fullname"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/lbl_followers"
+        android:textColor="#4E4D4D"
+        android:textSize="12sp"
+        tools:text="14781" />
+
+    <TextView
+        android:id="@+id/lbl_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fullname"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/tv_follower"
+        android:text="@string/lblfollowing"
+        android:textColor="#4E4D4D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fullname"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/lbl_following"
+        android:textColor="#4E4D4D"
+        android:textSize="12sp"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/img_avatar"
+        android:text="fullname"
+        android:textAllCaps="true" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lbl_followers"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider" />
+</RelativeLayout>

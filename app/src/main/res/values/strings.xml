@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aplikasi Github User</string>
+    <string name="lblfollower">Follower: </string>
+    <string name="lblfollowing">Following: </string>
+    <string name="username">UserName</string>
+    <string name="name">Name</string>
+    <string name="avatar">Avatar</string>
+    <string name="user_name">User Name:</string>
+    <string name="fullname">name</string>
+    <string name="lblfullname">Name:</string>
+    <string name="location">location</string>
+    <string name="lbllocation">Location:</string>
+    <string name="repository">repository</string>
+    <string name="lblrepository">Repository:</string>
+    <string name="company">company</string>
+    <string name="lblcompany">Company:</string>
+    <string name="follower">follower</string>
+    <string name="lbl_follower">Follower:</string>
+    <string name="following">following</string>
+    <string name="lbl_following">Following:</string>
+</resources>
